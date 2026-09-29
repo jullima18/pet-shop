@@ -47,3 +47,11 @@ app.post('api/pets',XMLHttpRequestUpload.single('image'),async(req,res)=>{
         return res.status(500).json({message:'erro ao salvar no banco de dados.'});
     }
 });
+
+app.listen(3000,()=>{
+    console.log('servidor rodando em https://localhost:3000');
+});
+
+process.on('uncaughtException',(err)=>{
+    console.error('O SERVIDOR CAIU PELO SEGUINTE ERRO:',err);
+});

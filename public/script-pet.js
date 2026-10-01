@@ -4,12 +4,12 @@ petForm.addEventListener('submit',async(e)=>{
     e.preventDefault();
 
     const formData = new  FormData();
-    formData.append('tutor',document.getElementById('tutor').Value.trim());
-     formData.append('nome-pet',document.getElementById('nomepet').Value.trim());
-     formData.append('raca',document.getElementById('raca').Value.trim());
-     formData.append('genero',document.getElementById('genero').Value.trim());
-     formData.append('peso',document.getElementById('peso').Value.trim());
-     formData.append('idade',document.getElementById('idade').Value.trim());
+     formData.append('tutor',document.getElementById('tutor').value.trim());
+     formData.append('nome_pet',document.getElementById('nomePet').value.trim());
+     formData.append('raca',document.getElementById('raca').value.trim());
+     formData.append('genero',document.getElementById('genero').value);
+     formData.append('peso',document.getElementById('peso').value);
+     formData.append('idade',document.getElementById('idade').value);
      
      const imageminput = document.getElementById('imagem');
 

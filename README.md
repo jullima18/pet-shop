@@ -53,3 +53,14 @@ criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
 SELECT * FROM pets;
+
+
+
+
+
+
+
+
+
+OBS: Você pode usar o terminal do vscode, se der erro ao executar o primeiro comando execute os comandos seguintes:
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
